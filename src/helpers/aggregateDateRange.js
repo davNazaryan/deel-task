@@ -6,9 +6,6 @@ module.exports = (start, end) => {
   // date range validation
   if ((start && !isNonNegativeNumber(start)) || (end && !isNonNegativeNumber(end))) {
     return { success: false };
-    /* return res.status(400).json({
-      start, end, message: 'given time rage is invalid',
-    }); */
   }
 
   const filterDate = {};
